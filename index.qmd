@@ -7,7 +7,6 @@ format:
     logo: "https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png"
     footer: "[R-Ladies Theme for Quarto](https://rladies.org/)"
     theme: ["custom.scss"]
-    lang: "pt"
 ---
 
 ## Quarto
@@ -75,30 +74,28 @@ tab <- starwars |>
 knitr::kable(tab)
 ```
 
----
+------------------------------------------------------------------------
 
 ## `DT::datatable()` {.smaller}
 
-With the `smaller` class in the slide! Ex:  ` ## slide name {.smaller}`
+With the `smaller` class in the slide! Ex: `## slide name {.smaller}`
 
 ```{r}
 DT::datatable(tab)
 ```
 
+------------------------------------------------------------------------
 
----
-
-## `gt::gt()` 
+## `gt::gt()`
 
 ```{r}
 gt::gt(tab)
 ```
 
----
+------------------------------------------------------------------------
 
-## `reactable::reactable()` 
+## `reactable::reactable()`
 
 ```{r}
 reactable::reactable(tab)
 ```
-
