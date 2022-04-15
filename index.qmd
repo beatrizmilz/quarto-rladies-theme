@@ -1,11 +1,11 @@
 ---
 title: "Quarto R-Ladies Theme"
 subtitle: "Inspired in the [xaringan theme](https://www.apreshill.com/slides/rladies-demo-slides.html) made by [Alison Hill](https://www.apreshill.com/) "
-author: "Bea Milz"
+author: "[Bea Milz](https://twitter.com/BeaMilz)"
 format: 
   revealjs:
     logo: "https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png"
-    footer: "[R-Ladies Theme for Quarto](https://rladies.org/)"
+    footer: "[R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
     theme: ["custom.scss"]
 ---
 
