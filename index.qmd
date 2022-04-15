@@ -1,0 +1,104 @@
+---
+title: "Quarto R-Ladies Theme"
+subtitle: "Inspired in the [xaringan theme](https://www.apreshill.com/slides/rladies-demo-slides.html) made by [Alison Hill](https://www.apreshill.com/) "
+author: "Bea Milz"
+format: 
+  revealjs:
+    logo: "https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png"
+    footer: "[R-Ladies Theme for Quarto](https://rladies.org/)"
+    theme: ["custom.scss"]
+    lang: "pt"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+> This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+> This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+> This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
+
+You can also add `text marked as code`!
+
+## You can add R code
+
+```{r}
+#| echo = TRUE
+library(dplyr)
+library(ggplot2)
+g <- starwars |> 
+  ggplot() +
+  geom_point(aes(x = height, y = mass)) +
+  theme_light()
+```
+
+## And show the results aswell :)
+
+```{r}
+#| fig.align='center',
+#| echo = TRUE
+g 
+```
+
+## What about tables?
+
+### `knitr::kable()`
+
+```{r}
+#| echo = FALSE
+tab <- starwars |>
+  tidyr::drop_na(species) |> 
+  group_by(species) |>
+  summarise(n = n(),
+            mean_heigth = round(mean(height, na.rm = TRUE)),
+            mean_mass = round(mean(mass, na.rm = TRUE))
+            ) |> 
+  slice_max(order_by = n, n = 4) 
+
+knitr::kable(tab)
+```
+
+---
+
+## `DT::datatable()` {.smaller}
+
+With the `smaller` class in the slide! Ex:  ` ## slide name {.smaller}`
+
+```{r}
+DT::datatable(tab)
+```
+
+
+---
+
+## `gt::gt()` 
+
+```{r}
+gt::gt(tab)
+```
+
+---
+
+## `reactable::reactable()` 
+
+```{r}
+reactable::reactable(tab)
+```
+
