@@ -7,6 +7,8 @@ format:
     logo: "https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png"
     footer: "[R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
     theme: ["custom.scss"]
+    slide-number: c/t
+    show-slide-number: all
 ---
 
 ## Quarto
