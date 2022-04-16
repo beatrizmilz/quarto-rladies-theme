@@ -25,8 +25,9 @@ $presentation-font-size-root: 35px;
 /*-- scss:rules --*/
 .reveal pre code {
   background-color: #f8f8f8;
-  font-size: $presentation-font-size-root;
+  font-size: 1em;
   padding: 0.5em;
+  line-height: 1.2em;
 }
 
 
