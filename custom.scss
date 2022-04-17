@@ -43,6 +43,14 @@ $presentation-font-size-root: 35px;
   font-family: $presentation-heading-font;
 }
 
+.footer {
+  font-family: $presentation-heading-font;
+}
+
+.reveal .slide-number {
+  font-family: $presentation-heading-font;
+}
+
 .reveal .panel-tabset [role=tab] {
     font-size: 0.8em;
 }

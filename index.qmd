@@ -38,6 +38,10 @@ When you click the **Render** button a presentation will be generated that inclu
 
 You can also add `text marked as code`!
 
+## Inverse example  {.center .inverse}
+
+:) TO DO!
+
 ## Tabset example
 
 ::: panel-tabset
