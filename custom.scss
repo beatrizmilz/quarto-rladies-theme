@@ -34,6 +34,13 @@ $presentation-font-size-root: 35px;
 .subtitle {
   color: $presentation-heading-color;
   font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.author {
+  color: $presentation-heading-color;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
 }
 
 .reveal .panel-tabset [role=tab] {

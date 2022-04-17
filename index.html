@@ -434,6 +434,20 @@
 </blockquote>
 <p>You can also add <code>text marked as code</code>!</p>
 </section>
+<section id="tabset-example" class="slide level2">
+<h2>Tabset example</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Example 1</a></li><li><a href="#tabset-1-2">Example 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p>Text here :)</p>
+</div>
+<div id="tabset-1-2">
+<p>More text here :)</p>
+</div>
+</div>
+</div>
+</section>
 <section id="you-can-add-r-code" class="slide level2">
 <h2>You can add R code</h2>
 <div class="cell">
@@ -525,8 +539,8 @@
 <p>With the <code>smaller</code> class in the slide! Ex: <code>## slide name {.smaller}</code></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-fef9edd72d5e745c114d" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fef9edd72d5e745c114d">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-924cac4f00011379e684" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-924cac4f00011379e684">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -534,12 +548,12 @@
 <h2><code>gt::gt()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="rtxtwvdbzs" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="keezullxsv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rtxtwvdbzs .gt_table {
+#keezullxsv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -564,7 +578,7 @@
   border-left-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_heading {
+#keezullxsv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -576,7 +590,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_title {
+#keezullxsv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -588,7 +602,7 @@
   border-bottom-width: 0;
 }
 
-#rtxtwvdbzs .gt_subtitle {
+#keezullxsv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -600,13 +614,13 @@
   border-top-width: 0;
 }
 
-#rtxtwvdbzs .gt_bottom_border {
+#keezullxsv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_col_headings {
+#keezullxsv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -621,7 +635,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_col_heading {
+#keezullxsv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -641,7 +655,7 @@
   overflow-x: hidden;
 }
 
-#rtxtwvdbzs .gt_column_spanner_outer {
+#keezullxsv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -653,15 +667,15 @@
   padding-right: 4px;
 }
 
-#rtxtwvdbzs .gt_column_spanner_outer:first-child {
+#keezullxsv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rtxtwvdbzs .gt_column_spanner_outer:last-child {
+#keezullxsv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rtxtwvdbzs .gt_column_spanner {
+#keezullxsv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -673,7 +687,7 @@
   width: 100%;
 }
 
-#rtxtwvdbzs .gt_group_heading {
+#keezullxsv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -698,7 +712,7 @@
   vertical-align: middle;
 }
 
-#rtxtwvdbzs .gt_empty_group_heading {
+#keezullxsv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -713,15 +727,15 @@
   vertical-align: middle;
 }
 
-#rtxtwvdbzs .gt_from_md > :first-child {
+#keezullxsv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rtxtwvdbzs .gt_from_md > :last-child {
+#keezullxsv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rtxtwvdbzs .gt_row {
+#keezullxsv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -740,7 +754,7 @@
   overflow-x: hidden;
 }
 
-#rtxtwvdbzs .gt_stub {
+#keezullxsv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -753,7 +767,7 @@
   padding-right: 5px;
 }
 
-#rtxtwvdbzs .gt_stub_row_group {
+#keezullxsv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -767,11 +781,11 @@
   vertical-align: top;
 }
 
-#rtxtwvdbzs .gt_row_group_first td {
+#keezullxsv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rtxtwvdbzs .gt_summary_row {
+#keezullxsv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -781,16 +795,16 @@
   padding-right: 5px;
 }
 
-#rtxtwvdbzs .gt_first_summary_row {
+#keezullxsv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_first_summary_row.thick {
+#keezullxsv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rtxtwvdbzs .gt_last_summary_row {
+#keezullxsv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -800,7 +814,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_grand_summary_row {
+#keezullxsv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -810,7 +824,7 @@
   padding-right: 5px;
 }
 
-#rtxtwvdbzs .gt_first_grand_summary_row {
+#keezullxsv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -820,11 +834,11 @@
   border-top-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_striped {
+#keezullxsv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rtxtwvdbzs .gt_table_body {
+#keezullxsv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -833,7 +847,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_footnotes {
+#keezullxsv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -847,7 +861,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_footnote {
+#keezullxsv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -856,7 +870,7 @@
   padding-right: 5px;
 }
 
-#rtxtwvdbzs .gt_sourcenotes {
+#keezullxsv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -870,7 +884,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rtxtwvdbzs .gt_sourcenote {
+#keezullxsv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -878,60 +892,60 @@
   padding-right: 5px;
 }
 
-#rtxtwvdbzs .gt_left {
+#keezullxsv .gt_left {
   text-align: left;
 }
 
-#rtxtwvdbzs .gt_center {
+#keezullxsv .gt_center {
   text-align: center;
 }
 
-#rtxtwvdbzs .gt_right {
+#keezullxsv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rtxtwvdbzs .gt_font_normal {
+#keezullxsv .gt_font_normal {
   font-weight: normal;
 }
 
-#rtxtwvdbzs .gt_font_bold {
+#keezullxsv .gt_font_bold {
   font-weight: bold;
 }
 
-#rtxtwvdbzs .gt_font_italic {
+#keezullxsv .gt_font_italic {
   font-style: italic;
 }
 
-#rtxtwvdbzs .gt_super {
+#keezullxsv .gt_super {
   font-size: 65%;
 }
 
-#rtxtwvdbzs .gt_footnote_marks {
+#keezullxsv .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#rtxtwvdbzs .gt_asterisk {
+#keezullxsv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rtxtwvdbzs .gt_slash_mark {
+#keezullxsv .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#rtxtwvdbzs .gt_fraction_numerator {
+#keezullxsv .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#rtxtwvdbzs .gt_fraction_denominator {
+#keezullxsv .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -992,8 +1006,8 @@
 <h2><code>reactable::reactable()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-4531736f61d34b3005a8" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-4531736f61d34b3005a8">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"accessor":"species","name":"species","type":"character"},{"accessor":"n","name":"n","type":"numeric"},{"accessor":"mean_heigth","name":"mean_heigth","type":"numeric"},{"accessor":"mean_mass","name":"mean_mass","type":"numeric"}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"c41ef692142443fd14a90172acaa917e","key":"c41ef692142443fd14a90172acaa917e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5b376c6c7dfd140a47e8" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5b376c6c7dfd140a47e8">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"accessor":"species","name":"species","type":"character"},{"accessor":"n","name":"n","type":"numeric"},{"accessor":"mean_heigth","name":"mean_heigth","type":"numeric"},{"accessor":"mean_mass","name":"mean_mass","type":"numeric"}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"c41ef692142443fd14a90172acaa917e","key":"c41ef692142443fd14a90172acaa917e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 

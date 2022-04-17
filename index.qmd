@@ -38,6 +38,18 @@ When you click the **Render** button a presentation will be generated that inclu
 
 You can also add `text marked as code`!
 
+## Tabset example
+
+::: panel-tabset
+## Example 1
+
+Text here :)
+
+## Example 2
+
+More text here :)
+:::
+
 ## You can add R code
 
 ```{r}
