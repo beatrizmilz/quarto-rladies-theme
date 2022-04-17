@@ -35,3 +35,7 @@ $presentation-font-size-root: 35px;
   color: $presentation-heading-color;
   font-size: $h2-font-size;
 }
+
+.reveal .panel-tabset [role=tab] {
+    font-size: 0.8em;
+}
