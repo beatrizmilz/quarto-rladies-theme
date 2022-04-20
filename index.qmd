@@ -97,7 +97,6 @@ tab <- starwars |>
 knitr::kable(tab)
 ```
 
-------------------------------------------------------------------------
 
 ## `DT::datatable()` {.smaller}
 
@@ -107,7 +106,6 @@ With the `smaller` class in the slide! Ex: `## slide name {.smaller}`
 DT::datatable(tab)
 ```
 
-------------------------------------------------------------------------
 
 ## `gt::gt()`
 
@@ -115,7 +113,6 @@ DT::datatable(tab)
 gt::gt(tab)
 ```
 
-------------------------------------------------------------------------
 
 ## `reactable::reactable()`
 
