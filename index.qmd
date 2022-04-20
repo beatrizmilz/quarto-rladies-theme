@@ -38,20 +38,25 @@ When you click the **Render** button a presentation will be generated that inclu
 
 You can also add `text marked as code`!
 
-## Inverse example  {.center .inverse}
+## New topic! {.center .center-x background-color="#562457"}
 
-:) TO DO!
+To make a slide like this, use:
+
+```
+## Title of slide {.center .center-x background-color="#562457"}
+
+```
 
 ## Tabset example
 
 ::: panel-tabset
 ## Example 1
 
-Text here :)
+Content here for tabset 1 :)
 
 ## Example 2
 
-More text here :)
+More content here, for tabset 2 :)
 :::
 
 ## You can add R code

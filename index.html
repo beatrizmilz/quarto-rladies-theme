@@ -380,7 +380,7 @@
   </style>
   <script src="index_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
   <link href="index_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-  <script src="index_files/libs/datatables-binding-0.21/datatables.js"></script>
+  <script src="index_files/libs/datatables-binding-0.22/datatables.js"></script>
   <script src="index_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="index_files/libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="index_files/libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet">
@@ -434,9 +434,11 @@
 </blockquote>
 <p>You can also add <code>text marked as code</code>!</p>
 </section>
-<section id="inverse-example" class="slide level2 center inverse">
-<h2>Inverse example</h2>
-<p>:) TO DO!</p>
+<section id="new-topic" class="slide level2 center center-x" data-background-color="#562457">
+<h2>New topic!</h2>
+<p>To make a slide like this, use:</p>
+<pre><code>## Title of slide {.center .center-x background-color="#562457"}
+</code></pre>
 </section>
 <section id="tabset-example" class="slide level2">
 <h2>Tabset example</h2>
@@ -444,10 +446,10 @@
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Example 1</a></li><li><a href="#tabset-1-2">Example 2</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<p>Text here :)</p>
+<p>Content here for tabset 1 :)</p>
 </div>
 <div id="tabset-1-2">
-<p>More text here :)</p>
+<p>More content here, for tabset 2 :)</p>
 </div>
 </div>
 </div>
@@ -455,18 +457,18 @@
 <section id="you-can-add-r-code" class="slide level2">
 <h2>You can add R code</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb2-3"><a href="#cb2-3"></a>g <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span> </span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> mass)) <span class="sc">+</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>g <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span> </span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> mass)) <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="and-show-the-results-aswell" class="slide level2">
 <h2>And show the results aswell :)</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch quarto-figure-center"></section>
@@ -543,8 +545,8 @@
 <p>With the <code>smaller</code> class in the slide! Ex: <code>## slide name {.smaller}</code></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-2ce171989cfda2dd5497" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2ce171989cfda2dd5497">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-45ec78c3a0a162617d91" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-45ec78c3a0a162617d91">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -552,12 +554,12 @@
 <h2><code>gt::gt()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="txjvtxtijz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="thrdygmgdv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#txjvtxtijz .gt_table {
+#thrdygmgdv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -582,7 +584,7 @@
   border-left-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_heading {
+#thrdygmgdv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -594,7 +596,7 @@
   border-right-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_title {
+#thrdygmgdv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -606,7 +608,7 @@
   border-bottom-width: 0;
 }
 
-#txjvtxtijz .gt_subtitle {
+#thrdygmgdv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -618,13 +620,13 @@
   border-top-width: 0;
 }
 
-#txjvtxtijz .gt_bottom_border {
+#thrdygmgdv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_col_headings {
+#thrdygmgdv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -639,7 +641,7 @@
   border-right-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_col_heading {
+#thrdygmgdv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -659,7 +661,7 @@
   overflow-x: hidden;
 }
 
-#txjvtxtijz .gt_column_spanner_outer {
+#thrdygmgdv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -671,15 +673,15 @@
   padding-right: 4px;
 }
 
-#txjvtxtijz .gt_column_spanner_outer:first-child {
+#thrdygmgdv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#txjvtxtijz .gt_column_spanner_outer:last-child {
+#thrdygmgdv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#txjvtxtijz .gt_column_spanner {
+#thrdygmgdv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -691,7 +693,7 @@
   width: 100%;
 }
 
-#txjvtxtijz .gt_group_heading {
+#thrdygmgdv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -716,7 +718,7 @@
   vertical-align: middle;
 }
 
-#txjvtxtijz .gt_empty_group_heading {
+#thrdygmgdv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -731,15 +733,15 @@
   vertical-align: middle;
 }
 
-#txjvtxtijz .gt_from_md > :first-child {
+#thrdygmgdv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#txjvtxtijz .gt_from_md > :last-child {
+#thrdygmgdv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#txjvtxtijz .gt_row {
+#thrdygmgdv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -758,7 +760,7 @@
   overflow-x: hidden;
 }
 
-#txjvtxtijz .gt_stub {
+#thrdygmgdv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -771,7 +773,7 @@
   padding-right: 5px;
 }
 
-#txjvtxtijz .gt_stub_row_group {
+#thrdygmgdv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -785,11 +787,11 @@
   vertical-align: top;
 }
 
-#txjvtxtijz .gt_row_group_first td {
+#thrdygmgdv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#txjvtxtijz .gt_summary_row {
+#thrdygmgdv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -799,16 +801,16 @@
   padding-right: 5px;
 }
 
-#txjvtxtijz .gt_first_summary_row {
+#thrdygmgdv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_first_summary_row.thick {
+#thrdygmgdv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#txjvtxtijz .gt_last_summary_row {
+#thrdygmgdv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -818,7 +820,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_grand_summary_row {
+#thrdygmgdv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -828,7 +830,7 @@
   padding-right: 5px;
 }
 
-#txjvtxtijz .gt_first_grand_summary_row {
+#thrdygmgdv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -838,11 +840,11 @@
   border-top-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_striped {
+#thrdygmgdv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#txjvtxtijz .gt_table_body {
+#thrdygmgdv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -851,7 +853,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_footnotes {
+#thrdygmgdv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -865,7 +867,7 @@
   border-right-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_footnote {
+#thrdygmgdv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -874,7 +876,7 @@
   padding-right: 5px;
 }
 
-#txjvtxtijz .gt_sourcenotes {
+#thrdygmgdv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -888,7 +890,7 @@
   border-right-color: #D3D3D3;
 }
 
-#txjvtxtijz .gt_sourcenote {
+#thrdygmgdv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -896,60 +898,60 @@
   padding-right: 5px;
 }
 
-#txjvtxtijz .gt_left {
+#thrdygmgdv .gt_left {
   text-align: left;
 }
 
-#txjvtxtijz .gt_center {
+#thrdygmgdv .gt_center {
   text-align: center;
 }
 
-#txjvtxtijz .gt_right {
+#thrdygmgdv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#txjvtxtijz .gt_font_normal {
+#thrdygmgdv .gt_font_normal {
   font-weight: normal;
 }
 
-#txjvtxtijz .gt_font_bold {
+#thrdygmgdv .gt_font_bold {
   font-weight: bold;
 }
 
-#txjvtxtijz .gt_font_italic {
+#thrdygmgdv .gt_font_italic {
   font-style: italic;
 }
 
-#txjvtxtijz .gt_super {
+#thrdygmgdv .gt_super {
   font-size: 65%;
 }
 
-#txjvtxtijz .gt_footnote_marks {
+#thrdygmgdv .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#txjvtxtijz .gt_asterisk {
+#thrdygmgdv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#txjvtxtijz .gt_slash_mark {
+#thrdygmgdv .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#txjvtxtijz .gt_fraction_numerator {
+#thrdygmgdv .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#txjvtxtijz .gt_fraction_denominator {
+#thrdygmgdv .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -1010,8 +1012,8 @@
 <h2><code>reactable::reactable()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-db76a02589d3a38d62a0" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-db76a02589d3a38d62a0">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"accessor":"species","name":"species","type":"character"},{"accessor":"n","name":"n","type":"numeric"},{"accessor":"mean_heigth","name":"mean_heigth","type":"numeric"},{"accessor":"mean_mass","name":"mean_mass","type":"numeric"}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"c41ef692142443fd14a90172acaa917e","key":"c41ef692142443fd14a90172acaa917e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1b6738699430c6fa9ffe" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1b6738699430c6fa9ffe">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"accessor":"species","name":"species","type":"character"},{"accessor":"n","name":"n","type":"numeric"},{"accessor":"mean_heigth","name":"mean_heigth","type":"numeric"},{"accessor":"mean_mass","name":"mean_mass","type":"numeric"}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"c41ef692142443fd14a90172acaa917e","key":"c41ef692142443fd14a90172acaa917e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
