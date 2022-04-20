@@ -32,13 +32,13 @@ $presentation-font-size-root: 35px;
 
 
 .subtitle {
-  color: $presentation-heading-color;
+  color: $body-bg;
   font-size: $h2-font-size;
   font-family: $presentation-heading-font;
 }
 
 .author {
-  color: $presentation-heading-color;
+  color: $body-bg;
   font-size: $h2-font-size;
   font-family: $presentation-heading-font;
 }
@@ -62,4 +62,8 @@ $presentation-font-size-root: 35px;
 
 .center-x{
     text-align: center;
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+    color: #fee4ff;
 }

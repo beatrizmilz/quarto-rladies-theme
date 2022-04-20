@@ -9,6 +9,9 @@ format:
     theme: ["custom.scss"]
     slide-number: c/t
     show-slide-number: all
+title-slide-attributes:
+   data-background-color: "#562457"
+preview-links: true
 ---
 
 ## Quarto
