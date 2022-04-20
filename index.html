@@ -425,6 +425,7 @@
 <h2>Code</h2>
 <p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
@@ -457,18 +458,18 @@
 <section id="you-can-add-r-code" class="slide level2">
 <h2>You can add R code</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-3"><a href="#cb3-3"></a>g <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span> </span>
-<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> mass)) <span class="sc">+</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-3"><a href="#cb4-3"></a>g <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span> </span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> mass)) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="and-show-the-results-aswell" class="slide level2">
 <h2>And show the results aswell :)</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>g </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch quarto-figure-center"></section>
@@ -545,8 +546,8 @@
 <p>With the <code>smaller</code> class in the slide! Ex: <code>## slide name {.smaller}</code></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-4737615c89589c0bf63a" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4737615c89589c0bf63a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ac46c4ce4a2d9dc973a2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ac46c4ce4a2d9dc973a2">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],[35,6,3,2,2,2,2,2],[177,131,209,221,168,179,231,173],[83,70,74,88,53,55,124,80]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>species<\/th>\n      <th>n<\/th>\n      <th>mean_heigth<\/th>\n      <th>mean_mass<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -554,12 +555,12 @@
 <h2><code>gt::gt()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="rjugjdryhe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="biidptahcm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rjugjdryhe .gt_table {
+#biidptahcm .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -584,7 +585,7 @@
   border-left-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_heading {
+#biidptahcm .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -596,7 +597,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_title {
+#biidptahcm .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -608,7 +609,7 @@
   border-bottom-width: 0;
 }
 
-#rjugjdryhe .gt_subtitle {
+#biidptahcm .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -620,13 +621,13 @@
   border-top-width: 0;
 }
 
-#rjugjdryhe .gt_bottom_border {
+#biidptahcm .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_col_headings {
+#biidptahcm .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -641,7 +642,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_col_heading {
+#biidptahcm .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -661,7 +662,7 @@
   overflow-x: hidden;
 }
 
-#rjugjdryhe .gt_column_spanner_outer {
+#biidptahcm .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -673,15 +674,15 @@
   padding-right: 4px;
 }
 
-#rjugjdryhe .gt_column_spanner_outer:first-child {
+#biidptahcm .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rjugjdryhe .gt_column_spanner_outer:last-child {
+#biidptahcm .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rjugjdryhe .gt_column_spanner {
+#biidptahcm .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -693,7 +694,7 @@
   width: 100%;
 }
 
-#rjugjdryhe .gt_group_heading {
+#biidptahcm .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -718,7 +719,7 @@
   vertical-align: middle;
 }
 
-#rjugjdryhe .gt_empty_group_heading {
+#biidptahcm .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -733,15 +734,15 @@
   vertical-align: middle;
 }
 
-#rjugjdryhe .gt_from_md > :first-child {
+#biidptahcm .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rjugjdryhe .gt_from_md > :last-child {
+#biidptahcm .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rjugjdryhe .gt_row {
+#biidptahcm .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -760,7 +761,7 @@
   overflow-x: hidden;
 }
 
-#rjugjdryhe .gt_stub {
+#biidptahcm .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -773,7 +774,7 @@
   padding-right: 5px;
 }
 
-#rjugjdryhe .gt_stub_row_group {
+#biidptahcm .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -787,11 +788,11 @@
   vertical-align: top;
 }
 
-#rjugjdryhe .gt_row_group_first td {
+#biidptahcm .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rjugjdryhe .gt_summary_row {
+#biidptahcm .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -801,16 +802,16 @@
   padding-right: 5px;
 }
 
-#rjugjdryhe .gt_first_summary_row {
+#biidptahcm .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_first_summary_row.thick {
+#biidptahcm .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rjugjdryhe .gt_last_summary_row {
+#biidptahcm .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -820,7 +821,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_grand_summary_row {
+#biidptahcm .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -830,7 +831,7 @@
   padding-right: 5px;
 }
 
-#rjugjdryhe .gt_first_grand_summary_row {
+#biidptahcm .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -840,11 +841,11 @@
   border-top-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_striped {
+#biidptahcm .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rjugjdryhe .gt_table_body {
+#biidptahcm .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -853,7 +854,7 @@
   border-bottom-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_footnotes {
+#biidptahcm .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -867,7 +868,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_footnote {
+#biidptahcm .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -876,7 +877,7 @@
   padding-right: 5px;
 }
 
-#rjugjdryhe .gt_sourcenotes {
+#biidptahcm .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -890,7 +891,7 @@
   border-right-color: #D3D3D3;
 }
 
-#rjugjdryhe .gt_sourcenote {
+#biidptahcm .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -898,60 +899,60 @@
   padding-right: 5px;
 }
 
-#rjugjdryhe .gt_left {
+#biidptahcm .gt_left {
   text-align: left;
 }
 
-#rjugjdryhe .gt_center {
+#biidptahcm .gt_center {
   text-align: center;
 }
 
-#rjugjdryhe .gt_right {
+#biidptahcm .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rjugjdryhe .gt_font_normal {
+#biidptahcm .gt_font_normal {
   font-weight: normal;
 }
 
-#rjugjdryhe .gt_font_bold {
+#biidptahcm .gt_font_bold {
   font-weight: bold;
 }
 
-#rjugjdryhe .gt_font_italic {
+#biidptahcm .gt_font_italic {
   font-style: italic;
 }
 
-#rjugjdryhe .gt_super {
+#biidptahcm .gt_super {
   font-size: 65%;
 }
 
-#rjugjdryhe .gt_footnote_marks {
+#biidptahcm .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#rjugjdryhe .gt_asterisk {
+#biidptahcm .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rjugjdryhe .gt_slash_mark {
+#biidptahcm .gt_slash_mark {
   font-size: 0.7em;
   line-height: 0.7em;
   vertical-align: 0.15em;
 }
 
-#rjugjdryhe .gt_fraction_numerator {
+#biidptahcm .gt_fraction_numerator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: 0.45em;
 }
 
-#rjugjdryhe .gt_fraction_denominator {
+#biidptahcm .gt_fraction_denominator {
   font-size: 0.6em;
   line-height: 0.6em;
   vertical-align: -0.05em;
@@ -1012,8 +1013,8 @@
 <h2><code>reactable::reactable()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-28257f5de8f502f7bb4a" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-28257f5de8f502f7bb4a">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"accessor":"species","name":"species","type":"character"},{"accessor":"n","name":"n","type":"numeric"},{"accessor":"mean_heigth","name":"mean_heigth","type":"numeric"},{"accessor":"mean_mass","name":"mean_mass","type":"numeric"}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"c41ef692142443fd14a90172acaa917e","key":"c41ef692142443fd14a90172acaa917e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d720abee42d5df646845" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d720abee42d5df646845">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"species":["Human","Droid","Gungan","Kaminoan","Mirialan","Twi'lek","Wookiee","Zabrak"],"n":[35,6,3,2,2,2,2,2],"mean_heigth":[177,131,209,221,168,179,231,173],"mean_mass":[83,70,74,88,53,55,124,80]},"columns":[{"accessor":"species","name":"species","type":"character"},{"accessor":"n","name":"n","type":"numeric"},{"accessor":"mean_heigth","name":"mean_heigth","type":"numeric"},{"accessor":"mean_mass","name":"mean_mass","type":"numeric"}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"c41ef692142443fd14a90172acaa917e","key":"c41ef692142443fd14a90172acaa917e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
