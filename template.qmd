@@ -8,7 +8,8 @@ self-contained: true
 
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+Quarto enables you to weave together content and executable code into a finished presentation.
+To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
 > This is part of the [Quarto documentation](https://quarto.org/docs/presentations/).
 
@@ -23,7 +24,8 @@ When you click the **Render** button a document will be generated that includes:
 
 ## Code
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
+You can embed code like this:
 
 ```{r}
 #| echo: true
@@ -38,9 +40,7 @@ You can also add `text marked as code`!
 
 To make a slide like this, use:
 
-```
-## Title of slide {.center .center-x background-color="#562457"}
-```
+    ## Title of slide {.center .center-x background-color="#562457"}
 
 ## Tabset example
 
@@ -78,8 +78,7 @@ g
 
 ### `knitr::kable()`
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 ```{r}
 #| label: kable-ex
@@ -105,12 +104,12 @@ knitr::kable(tab)
 #| eval: true
 ```
 :::
-
-::::
+:::
 
 ## `DT::datatable()` {.smaller}
 
-With the `smaller` class in the slide! Ex: `## slide name {.smaller}`
+With the `smaller` class in the slide!
+Ex: `## slide name {.smaller}`
 
 ```{r}
 DT::datatable(tab, options = list(pageLength = 5))
@@ -127,3 +126,12 @@ gt::gt(tab)
 ```{r}
 reactable::reactable(tab)
 ```
+
+## Diagrams with Mermaid!
+
+Read about how to create a diagram in this [post by Mine Çetinkaya-Rundel](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/).
+
+<center>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/quartotip?src=hash&amp;ref_src=twsrc%5Etfw">#quartotip</a> 21: Create diagrams in Quarto documents using Mermaid or Graphviz in executable code cells, similar to how you create figures.<br><br>Read more: <a href="https://t.co/3qx9oSNCay">https://t.co/3qx9oSNCay</a> <a href="https://t.co/fYzGcISl4h">pic.twitter.com/fYzGcISl4h</a></p>&mdash; Quarto (@quarto_pub) <a href="https://twitter.com/quarto_pub/status/1549271325943947270?ref_src=twsrc%5Etfw">July 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
