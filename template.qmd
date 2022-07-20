@@ -3,6 +3,7 @@ title: "Quarto R-Ladies Theme"
 subtitle: "Inspired in the [xaringan theme](https://www.apreshill.com/slides/rladies-demo-slides.html) made by [Alison Hill](https://www.apreshill.com/) "
 author: "[Bea Milz](https://twitter.com/BeaMilz)"
 format: rladies-revealjs
+self-contained: true
 ---
 
 ## Quarto
