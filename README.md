@@ -15,6 +15,9 @@ This [Quarto](https://quarto.org) extension can be installed using the following
 quarto install extension beatrizmilz/quarto-rladies-theme
 ```
 
+If you are unable to install Quarto extensions, you probably should [update Quarto](https://quarto.org/docs/get-started/).
+
+
 ## Acknowledgments
 
 - [Beatriz Milz](https://github.com/beatrizmilz) 
