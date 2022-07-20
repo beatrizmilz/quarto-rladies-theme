@@ -32,7 +32,7 @@ $presentation-font-size-root: 35px;
 
 
 .subtitle {
-  color: #FFFFFF;
+  color: $body-bg;
   font-size: $h2-font-size;
   font-family: $presentation-heading-font;
 }

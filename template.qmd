@@ -2,16 +2,7 @@
 title: "Quarto R-Ladies Theme"
 subtitle: "Inspired in the [xaringan theme](https://www.apreshill.com/slides/rladies-demo-slides.html) made by [Alison Hill](https://www.apreshill.com/) "
 author: "[Bea Milz](https://twitter.com/BeaMilz)"
-format: 
-  revealjs:
-    logo: "https://rladies.org/wp-content/uploads/2016/12/R-LadiesGlobal.png"
-    footer: "[R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
-    theme: ["custom.scss"]
-    slide-number: c/t
-    show-slide-number: all
-title-slide-attributes:
-   data-background-color: "#562457"
-preview-links: true
+format: rladies-revealjs
 ---
 
 ## Quarto
@@ -48,7 +39,6 @@ To make a slide like this, use:
 
 ```
 ## Title of slide {.center .center-x background-color="#562457"}
-
 ```
 
 ## Tabset example
@@ -66,7 +56,7 @@ More content here, for tabset 2 :)
 ## You can add R code
 
 ```{r}
-#| echo = TRUE
+#| echo: true
 library(dplyr)
 library(ggplot2)
 g <- starwars |> 
@@ -78,45 +68,58 @@ g <- starwars |>
 ## And show the results aswell :)
 
 ```{r}
-#| fig.align='center',
-#| echo = TRUE
+#| fig.align: center
+#| echo: true
 g 
 ```
 
-## What about tables?
+## What about tables? {.smaller}
 
 ### `knitr::kable()`
 
+:::: {.columns}
+
+::: {.column width="50%"}
 ```{r}
-#| echo = FALSE
+#| label: kable-ex
+#| echo: true
+#| eval: false
 tab <- starwars |>
   tidyr::drop_na(species) |> 
   group_by(species) |>
-  summarise(n = n(),
-            mean_heigth = round(mean(height, na.rm = TRUE)),
-            mean_mass = round(mean(mass, na.rm = TRUE))
-            ) |> 
+  summarise(
+    n = n(),
+    mean_heigth = round(mean(height, na.rm = TRUE)),
+    mean_mass = round(mean(mass, na.rm = TRUE))
+  ) |> 
   slice_max(order_by = n, n = 4) 
 
 knitr::kable(tab)
 ```
+:::
 
+::: {.column width="50%"}
+```{r}
+#| label: kable-ex
+#| eval: true
+```
+:::
+
+::::
 
 ## `DT::datatable()` {.smaller}
 
 With the `smaller` class in the slide! Ex: `## slide name {.smaller}`
 
 ```{r}
-DT::datatable(tab)
+DT::datatable(tab, options = list(pageLength = 5))
 ```
-
 
 ## `gt::gt()`
 
 ```{r}
 gt::gt(tab)
 ```
-
 
 ## `reactable::reactable()`
 

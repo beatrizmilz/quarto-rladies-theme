@@ -1,0 +1,16 @@
+title: R-Ladies Presentation Template
+author: Beatriz Milz
+version: 1.0.0
+contributes:
+  format: 
+    revealjs:
+      logo: logo.png
+      footer: |
+        [R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html).
+        Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme).
+      theme: rladies.scss
+      slide-number: c/t
+      show-slide-number: all
+      title-slide-attributes:
+        data-background-color: "#562457"
+      preview-links: true
