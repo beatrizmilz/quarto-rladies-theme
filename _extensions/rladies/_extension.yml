@@ -1,10 +1,10 @@
 title: R-Ladies Presentation Template
 author: Beatriz Milz
-version: 1.0.0
+version: 0.0.1
 contributes:
   format: 
     revealjs:
-      logo: logo.png
+      logo: https://raw.githubusercontent.com/rladies/branding-materials/main/logo/R-LadiesGlobal_RBG_online_LogoWithText.png
       footer: |
         [R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html).
         Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme).
