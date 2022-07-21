@@ -2,7 +2,7 @@ title: R-Ladies Presentation Template
 author: Beatriz Milz
 version: 0.0.1
 contributes:
-  format: 
+  formats: 
     revealjs:
       logo: https://raw.githubusercontent.com/rladies/branding-materials/main/logo/R-LadiesGlobal_RBG_online_LogoWithText.png
       footer: |
