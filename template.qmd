@@ -156,9 +156,3 @@ You can use the function `pagedown::chrome_print()` to print the HTML version in
 ```r
 pagedown::chrome_print("path-to-file.html")
 ```
-
-
-
-
-
-
