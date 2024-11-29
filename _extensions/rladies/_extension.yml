@@ -1,6 +1,6 @@
 title: R-Ladies Presentation Template
 author: Beatriz Milz
-version: 0.0.3
+version: 0.0.4
 contributes:
   formats: 
     revealjs:

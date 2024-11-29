@@ -61,3 +61,5 @@ Files created:
 - [Quarto documentation](https://quarto.org/docs/extensions/formats.html)
 
 - [Martine Jansen](https://twitter.com/nnie_nl) - Martine's questions helped to improve the template content in order to make it easier for other people to use it!
+
+- [Martine Jansen](https://github.com/MMJansen) - Suggested the addition of the `.inverse` class.
