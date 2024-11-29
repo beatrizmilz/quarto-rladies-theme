@@ -86,3 +86,10 @@ section.has-dark-background a, section.has-dark-background a:hover {
   top: unset !important;
   color: $body-color !important;
 }
+
+.inverse {
+  background-color: #562457 !important;
+  $h1-color: white !important;
+  $h2-color: white !important;
+  $h3-color: white !important;
+}
